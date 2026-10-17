@@ -1,4 +1,4 @@
-# Game Zone
+# BIG BAD GAMES SHOP
 
 **Student:** Nathan Chen  
 **Student ID:** 2401010289  
