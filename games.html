@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Game Zone: discover games, play a quick challenge and join a demo tournament."
+    />
+    <title>Explore games | BIG BAD GAME SHOP</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-dark container py-4"
+        aria-label="Main navigation"
+      >
+        <a class="navbar-brand" href="index.html"
+          >BIG BAD<span> GAME SHOP</span><small>PLAY YOUR WAY.</small></a
+        ><button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ms-auto gap-md-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="games.html"
+                >Explore games</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="container section-space">
+        <p class="eyebrow">The collection / 01</p>
+        <h1 class="page-heading">
+          FIND YOUR <span class="pink">NEXT GAME.</span>
+        </h1>
+        <p class="lead mt-3">
+          Browse our game collection.
+        </p>
+        <div class="row g-3 my-4">
+          <div class="col-md-7">
+            <label class="form-label" for="search">Search games</label
+            ><input
+              class="form-control"
+              type="search"
+              id="search"
+              placeholder="Try Neon Sprint..."
+            />
+          </div>
+          <div class="col-md-5">
+            <label class="form-label" for="category">Category</label
+            ><select class="form-select" id="category">
+              <option value="All">All categories</option>
+              <option>Action</option>
+              <option>Adventure</option>
+              <option>Creative</option>
+              <option>Puzzle</option>
+              <option>Racing</option>
+              <option>Sports</option>
+            </select>
+          </div>
+        </div>
+        <p id="result-count" class="muted" role="status"></p>
+        <div id="games-grid" class="row g-4"></div>
+      </section>
+      <div
+        class="modal fade"
+        id="game-modal"
+        tabindex="-1"
+        aria-labelledby="modal-title"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-4" id="modal-title"></h2>
+              <button
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                type="button"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p id="modal-description"></p>
+              <p id="modal-info" class="cyan"></p>
+              <p class="small muted">
+                Sample listing only. 
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-outline-light"
+                data-bs-dismiss="modal"
+              >
+                Keep browsing</button
+              ><a class="btn btn-primary" href="register.html"
+                >View tournament signup</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container py-4 mt-5">
+      <div class="d-flex justify-content-between flex-wrap gap-3">
+        <span class="fw-bold"
+          >BIG BAD GAME SHOP <span class="cyan">/</span> GAME ZONE</span
+        ><span>2401010289 · Nathan Chen · 2026</span>
+      </div>
+    </footer>
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

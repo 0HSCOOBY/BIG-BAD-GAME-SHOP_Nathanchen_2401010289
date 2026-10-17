@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Game Zone: discover games, play a quick challenge and join a demo tournament."
+    />
+    <title>Home | Game Zone</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-dark container py-4"
+        aria-label="Main navigation"
+      >
+        <a class="navbar-brand" href="index.html"
+          >BIG BAD<span> GAME SHOP</span><small>PLAY YOUR WAY.</small></a
+        ><button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ms-auto gap-md-4">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="games.html">Explore games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="container hero">
+        <div class="row align-items-center g-4">
+          <div class="col-md-6">
+            <p class="eyebrow">Your next favourite starts here</p>
+            <h1>
+              BIG.<br /><span class="pink">BAD.</span><br /><span
+                class="cyan"
+                >Game Shop!</span
+              >
+            </h1>
+            <p class="lead mt-4">
+              Welcome to BIG BAD GAME SHOP. Find your game.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a class="btn btn-primary" href="games.html">Explore games ↗</a
+              ><a class="btn btn-outline-light" href="register.html"
+                >Join a tournament</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              class="hero-art"
+              src="images/controller.svg"
+              alt="Cyan game controller with pink buttons"
+            />
+          </div>
+        </div>
+      </section>
+      <div class="ticker">
+        PICK A GAME&nbsp;AND PLAYYYYY.
+      </div>
+      <section class="container section-space">
+        <div class="row g-4">
+          <div class="col-md-7">
+            <p class="eyebrow">The weekend lineup</p>
+            <h2>This Week line up.</h2>
+            <p class="muted">
+              Browse six original demo games across action, racing, sports and
+              more. Check their sample ratings and find something that fits your
+              mood.
+            </p>
+            <a href="games.html">See  collection →</a>
+            <div class="panel p-4 mt-4">
+              <span class="badge mb-3">DEMO EVENT · NOV 07, 2026</span>
+              <h3>Game Zone Community Cup</h3>
+              <p class="muted">
+                 Choose Neon Sprint,
+                Final Whistle or Orbit Arena when you register.
+              </p>
+              <a class="btn btn-primary" href="register.html">Save your spot</a>
+              <p class="small muted mt-3 mb-0">
+                Fictional event for this assignment. No real bookings or
+                payments.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="panel p-4 h-100">
+              <p class="eyebrow">Quick play</p>
+              <h2>Guess the number</h2>
+              <p class="muted">
+                Guess a number from 1 to 10. You get three tries. Can you find
+                it?
+              </p>
+              <form id="guess-form">
+                <label for="guess" class="form-label">Your guess</label
+                ><input
+                  id="guess"
+                  class="form-control mb-3"
+                  type="number"
+                  min="1"
+                  max="10"
+                  required
+                /><button
+                  class="btn btn-primary"
+                  id="guess-button"
+                  type="submit"
+                >
+                  Make a guess</button
+                ><button
+                  class="btn btn-outline-light"
+                  id="restart"
+                  type="button"
+                >
+                  New game
+                </button>
+              </form>
+              <p
+                id="game-message"
+                class="mt-3 mb-0"
+                role="status"
+                aria-live="polite"
+              >
+                Three tries left. Good luck!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container py-4 mt-5">
+      <div class="d-flex justify-content-between flex-wrap gap-3">
+        <span class="fw-bold"
+          >BIG BAD GAME SHOP <span class="cyan">/ GAME ZONE</span> 
+         .</span
+        ><span>2401010289 · Nathan Chen · 2026</span>
+      </div>
+    </footer>
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

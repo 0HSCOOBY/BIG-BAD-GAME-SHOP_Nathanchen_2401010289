@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Game Zone: discover games, play a quick challenge and join a tournament."
+    />
+    <title>Tournament registration | Game Zone</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-dark container py-4"
+        aria-label="Main navigation"
+      >
+        <a class="navbar-brand" href="index.html"
+          >GAME<span>ZONE</span><small>PLAY YOUR WAY.</small></a
+        ><button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ms-auto gap-md-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="games.html">Explore games</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="register.html"
+                >Register</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="container section-space">
+        <p class="eyebrow">Community cup / 02</p>
+        <h1 class="page-heading">
+          BRING YOUR <span class="cyan">A-GAME.</span>
+        </h1>
+        <p class="lead mt-3">Sign up for our  community tournament.</p>
+        <div class="row g-4 mt-3">
+          <div class="col-lg-7">
+            <div class="panel p-4">
+              <h2 class="h4 mb-4">Player registration</h2>
+              <p class="small muted">
+                This is a demo Nothing is sent or saved.
+                .
+              </p>
+              <form id="registration-form" novalidate>
+                <div class="mb-3">
+                  <label class="form-label" for="player-name">Player name</label
+                  ><input
+                    class="form-control"
+                    id="player-name"
+                    name="playerName"
+                    required
+                    minlength="2"
+                    maxlength="60"
+                    autocomplete="name"
+                    aria-describedby="name-error"
+                  />
+                  <div class="invalid-feedback" id="name-error">
+                    Enter a name with at least 2 characters.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="email">Email address</label
+                  ><input
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    autocomplete="email"
+                    aria-describedby="email-error"
+                  />
+                  <div class="invalid-feedback" id="email-error">
+                    Enter a valid email address.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="event-game"
+                    >Tournament game</label
+                  ><select
+                    id="event-game"
+                    name="game"
+                    class="form-select"
+                    required
+                    aria-describedby="event-error"
+                  >
+                    <option value="">Choose a game</option>
+                    <option>Neon Sprint</option>
+                    <option>Final Whistle</option>
+                    <option>Orbit Arena</option>
+                  </select>
+                  <div class="invalid-feedback" id="event-error">
+                    Choose a tournament game.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="platform" class="form-label">Your platform</label
+                  ><select
+                    class="form-select"
+                    id="platform"
+                    name="platform"
+                    required
+                    aria-describedby="platform-error"
+                  >
+                    <option value="">Choose a platform</option>
+                    <option>PC</option>
+                    <option>PlayStation</option>
+                    <option>Xbox</option>
+                    <option>Mobile</option>
+                  </select>
+                  <div class="invalid-feedback" id="platform-error">
+                    Choose a platform.
+                  </div>
+                </div>
+                <div class="form-check mb-4">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="rules"
+                    required
+                    aria-describedby="rules-error"
+                  /><label class="form-check-label" for="rules"
+                    >I agree to play fairly and respect other players.</label
+                  >
+                  <div class="invalid-feedback" id="rules-error">
+                    Agree to the rules before registering.
+                  </div>
+                </div>
+                <button class="btn btn-primary" type="submit">
+                  Register player ↗
+                </button>
+                <p
+                  id="form-status"
+                  class="mt-3 mb-0"
+                  role="status"
+                  aria-live="polite"
+                ></p>
+              </form>
+            </div>
+          </div>
+          <aside class="col-lg-5">
+            <div class="panel p-4 mb-4">
+              <span class="badge mb-3"> ENTRY</span>
+              <h2 class="h4">Community Cup</h2>
+              <ul class="check-list muted">
+                <li>Saturday, November 7, 2026</li>
+                <li>3:00 PM Jamaica time</li>
+                <li>Online friendly matches</li>
+                <li>All experience levels welcome</li>
+              </ul>
+              <p class="small muted mb-0">
+                This event is for registration only.
+              </p>
+            </div>
+            <h2 class="h4 mb-3">Before you join</h2>
+            <div class="accordion" id="faq">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-one"
+                    aria-expanded="false"
+                    aria-controls="faq-one"
+                  >
+                    Do I need to be an expert?
+                  </button>
+                </h3>
+                <div
+                  class="accordion-collapse collapse"
+                  id="faq-one"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body">
+                    No. The Community Cup is designed for friendly play at every
+                    skill level.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-two"
+                    aria-expanded="false"
+                    aria-controls="faq-two"
+                  >
+                    Will I receive an email?
+                  </button>
+                </h3>
+                <div
+                  class="accordion-collapse collapse"
+                  id="faq-two"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body">
+                    No. This demo displays a confirmation on this page. It does
+                    not send emails or create real registrations.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="container py-4 mt-5">
+      <div class="d-flex justify-content-between flex-wrap gap-3">
+        <span class="fw-bold"
+          >BIG BAD GAME SHOP <span class="cyan">/</span> GAME ZONE</span
+        ><span>2401010289 · Nathan Chen · 2026</span>
+      </div>
+    </footer>
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
