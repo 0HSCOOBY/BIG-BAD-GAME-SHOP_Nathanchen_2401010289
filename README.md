@@ -10,8 +10,7 @@
 - `games.html`: six games, live search, category filter, sample ratings and details modal.
 - `register.html`: tournament form, visible validation and success feedback, plus FAQ.
 
-## Run
-Extract the ZIP, then open `index.html` in a browser. No installation is needed. Bootstrap and jQuery are included locally. For editing, open the folder in VS Code and optionally use Live Server. See `SETUP_GUIDE.md` for detailed steps and GitHub submission.
+## open `index.html` in a browser. No installation is needed. Bootstrap and jQuery are included locally. For editing, open the folder in VS Code and optionally use Live Server.
 
 ## Structure
 ```
