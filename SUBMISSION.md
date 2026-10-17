@@ -6,8 +6,6 @@ Student ID: 2401010289
 
 Project: Game Zone
 
-GitHub Repository URL: [REPLACE WITH YOUR ACTUAL REPOSITORY URL]
+GitHub Repository URL: https://github.com/0HSCOOBY/BIG-BAD-GAME-SHOP_Nathanchen_2401010289
 
 Date Submitted: 10/17/2026
-
-AI Assistance Disclosure: ChatGPT assisted with planning, code, illustrations, debugging and documentation. [ADD AN ACCURATE DESCRIPTION OF YOUR OWN REVIEW, TESTING AND CHANGES.]
